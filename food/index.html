@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- Header Section -->
+  <header class="header">
+    <h1>Welcome to Foodie Haven</h1>
+    <nav class="nav-bar">
+      <button onclick="showHome()">Home</button>
+      <button onclick="window.location.href='profile.html'">Make Profile</button>
+      <button onclick="window.location.href='offers.html'">Offers</button>
+      <button onclick="showCart()">Cart</button>
+      <button onclick="showHelp()">Help</button>
+    </nav>
+  </header>
+
+  <!-- Search Bar -->
+  <section class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for dishes...">
+    <button onclick="searchDishes()">Search</button>
+  </section>
+<!-- Help Section (initially hidden) -->
+<section id="helpSection" class="help">
+    <h2>Help & FAQs</h2>
+    <ul>
+      <li><strong>How to Search:</strong> Use the search bar to find dishes by name.</li>
+      <li><strong>Veg/Non-Veg:</strong> Click on these buttons to see veg or non-veg items.</li>
+      <li><strong>Cart:</strong> Add items to your cart for easy checkout.</li>
+      <li><strong>Profile:</strong> Complete your profile to streamline future orders.</li>
+    </ul>
+    <button onclick="hideHelp()">Close</button>
+  </section>
+
+<section class="menu">
+
+  <div class="menu-grid" id="menuGrid">
+  </head>
+  <body>
+    <h1>Select Your Preference</h1>
+    <div class="button-container">
+      <a href="veg.html" class="neon-btn veg-btn">Veg</a>
+      <a href="nonveg.html" class="neon-btn nonveg-btn">Non-Veg</a>
+    </div>
+  </body>
+  </html>
+    <!-- Dynamic items will appear here -->
+  </div>
+</section>
+
+  <!-- Menu Display Section -->
+  <section class="menu" id="menuGrid">
+    <!-- Dynamic items will be loaded here based on selection -->
+  </section>
+  <section class="whats-on-your-mind">
+    <h2>What's on Your Mind?</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png" alt="Biryani" class="food-image">
+          <p></p>
+        </div>
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Momos.png" alt="Momos" class="food-image">
+          <p></p>
+        </div>
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Chinese.png" alt="Chinese" class="food-image">
+          <p></p>
+        </div>
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/17/4ec9d604-32db-4820-a21d-4dde0ced8ecc_Rolls1.png" alt="Rolls" class="food-image">
+          <p></p>
+        </div>
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Gulab%20jamun.png" alt="Gulab Jamun" class="food-image">
+          <p></p>
+        </div>
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Rasgulla.png" alt="Rasgulla" class="food-image">
+          <p></p>
+        </div>
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Pure%20Veg.png" alt="Pure Veg" class="food-image">
+          <p></p>
+        </div>
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Paratha.png" alt="Paratha" class="food-image">
+          <p></p>
+        </div>
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_chole%20bhature.png" alt="Chole Bhature" class="food-image">
+          <p></p>
+        </div>
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Noodles.png" alt="Noodles" class="food-image">
+          <p></p>
+        </div>
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_autAo,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Poori.png" alt="Poori" class="food-image">
+          <p></p>
+        </div>
+        <div class="food-item">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Kebabs.png" alt="Kabab" class="food-image">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <button id="prevBtn">←</button>
+    <button id="nextBtn">→</button>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Foodie Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
